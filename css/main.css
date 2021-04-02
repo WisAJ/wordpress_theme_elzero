@@ -1,0 +1,366 @@
+body {
+    background-color: rgb(240, 241, 194);
+}
+
+nav .nav-link{
+    color: rgba(255, 255, 255, 0.9)!important;
+    }
+
+    nav .nav-link:hover{
+        color: rgb(240, 241, 194)!important;
+        }
+
+
+.footer {
+    background-color: #333;
+    color: #EEE;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+.main-post{
+    padding: 20px;
+    background-color: rgb(240, 241, 194);
+    border-bottom: 1px solid #333;
+    margin-bottom: 10px;
+}
+
+.main-post h3 {
+    margin: 0 0 10px;
+    font-weight: bold;
+    color: #777;
+    letter-spacing: -1px;
+}
+
+.main-post img {
+    display: block;
+    margin: 10px 0 10px;
+    width: 600px;
+    height: 300px;
+}
+
+.main-post i {
+    color: #777
+}
+
+.main-post .post-author,
+.main-post .post-date,
+.main-post .post-comments {
+    font-size: 12px
+}
+
+.main-post .post-summary {
+    line-height: 1.7;
+    color: #333;
+
+}
+
+.main-post a,
+.post-title a,
+.categories a,
+.post-author a,
+.post-comments a,
+.more-link {
+    text-decoration: none;
+}
+
+.post-pagination {
+    margin: 16px auto 93px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-pagination a,
+.post-pagination span {
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #292b2d;
+      border-radius: 5px;
+      opacity: 0.8;
+      color:rgb(240, 241, 194);
+      transition: all 0.5s ease-in-out   
+}
+
+.post-pagination a:first-of-type {
+    margin-right: 10px;
+} 
+
+.post-pagination .prev{
+    margin-right: 10px;
+}
+
+.post-pagination span{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.post-pagination a:hover {
+      background-color: rgb(240, 241, 194);
+      color: #292b2d;
+}
+
+.bypostauthor{
+    position: relative;
+    background-color: #eaebe5!important;
+}
+
+.bypostauthor::after{
+    content: ' [الكاتب]';
+	font-weight: bold;
+    position: absolute;
+    top: 0.9px;
+    right: 0.9px;
+    color:#d2d4c8 ;
+
+
+}
+
+
+/*  Edit  */
+
+.single-post .post-edit-link{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.comments-list ul,
+.comments-list ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*  Author  */
+.author-info {
+ color: #333;
+}
+
+/*  Comments  */
+
+.comments-count{
+    font-size: 22px;
+}
+
+.comments-list .comment .says{
+    display: none;
+}
+
+.comments-list .comment img{
+    padding: 3px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.comments-list .comment .comment-meta{
+    font-size: 12px;
+    color:#777;
+}
+
+.comments-list .comment p {
+    margin-top: 8px;
+    color: #6f6f6f;
+}
+
+/*  level 1 */
+.comments-list > .comment {
+ background-color: #fff;
+ padding: 10px;
+ border: 1px solid #ddd;
+ margin-bottom: 15px;
+}
+
+/*  level 2 */
+.comments-list > .comment > .children > .comment {
+    padding: 10px;
+    background-color: #eee;
+    margin-top: 10px;
+    border: 1px solid #ccc
+}
+
+/*  level 3 */
+.comments-list > .comment > .children > .comment .comment {      
+    padding: 10px;
+    background-color: #ddd;
+    margin-top: 10px;
+    border: 1px solid #aaa;
+}
+
+.comment-respond label {
+    display: block;
+}
+
+/* Start Author Page  */
+
+.author-page .author-main-info {
+	font-size: 18px;
+}
+
+.author-page .author-meta {
+	background: #FFF;
+	padding: 10px;
+	margin: 0;
+	margin-bottom: 20px;
+	border: 1px solid #dedede;
+}
+
+.author-page .author-main-info .profile-header {
+	font-size: 60px;
+	margin: 30px 0;
+	color: #666;
+	font-weight: bold;
+	letter-spacing: -3px;
+}
+
+.author-page .author-meta .author-names span {
+	color: #807d7d;
+}
+
+.author-page .author-meta .author-names .nickname {
+	color: black;
+}
+
+.author-page .author-main-info p {
+	color: #777;
+	line-height: 1.7;
+	letter-spacing: 1px;
+}
+
+.author-page .author-stats .stats {
+	background: #FFF;
+	padding: 20px;
+	margin: 0;
+	margin-bottom: 20px;
+	border: 1px solid #dedede;
+	text-align: center;
+	font-size: 14px;
+}
+
+.author-page .author-stats .stats span {
+	display: block;
+	font-size: 50px;
+	margin-top: 10px;
+}
+
+/*  paginatgion */
+
+.pagingation_num {
+    margin: 5px auto 25px;
+    font-family: Tahoma, Arial;
+    font-size: 16px;
+    text-align: center;
+}
+
+.pagingation_num .page-numbers {
+    display: inline-block;
+    background-color:#51534b;
+    color: #f0f1c2;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+}
+
+.pagingation_num .page-numbers.current {
+background-color: #2980b9;
+}
+
+.pagingation_num .page-numbers:hover {
+    text-decoration: none;
+    background-color: #2980b9;
+}
+
+/*  404 page */
+
+.not-found {
+	text-align: center;
+}
+
+.not-found img {
+	width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 32px;
+}
+
+/* Start Category Page */
+
+.category-page .cat-info {
+	background: #FFF!important;
+	margin: 10px 0;
+	padding: 10px;
+	border: 1px solid #dedede;
+	color: #777;
+}
+
+.category-page .cat-info .cat-stats{
+	line-height: 78px;
+}
+
+.category-page .cat-info p {
+margin: 0;
+line-height: 78px;
+}
+
+.cat-info .cat-desc {
+    margin: 0!important;
+}
+
+.category-page .cat-info h1 {
+    margin: 0;
+    line-height: 78px;
+    }
+
+/* End Category Page */
+
+/* Start Sidbar-new category styling  */
+
+.sidebar-new .widget {
+	background: #FFF;
+	margin-bottom: 15px;
+	border: 1px solid #d8d8d8;
+}
+
+.sidebar-new  .widget-title {
+	font-size: 20px;
+	padding: 10px;
+	background: #6998f0;
+	color: white;
+	font-weight: bold;
+	letter-spacing: 0px;
+    width:50%;
+}
+
+.sidebar-new  .widget-content {
+	margin: 0;
+	padding: 10px;
+	color: #756f6f;
+}
+
+/* End Sidbar-new category styling   */
+
+
+/* Start breadcrumb */
+.breadcrumb-holder.container{ 
+	background-color: #d8d8d8; 
+	margin-right: 0; 
+	margin-left: 0; 
+} 
+.breadcrumb-holder .container .breadcrumb{
+	background-color: #d8d8d8; 
+	border-radius: 0;
+}
+
+.breadcrumb-holder .container .breadcrumb li a {
+	text-decoration: none;
+}
+/* End breadcrumb */
+
+
+
+
