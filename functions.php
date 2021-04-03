@@ -139,14 +139,20 @@ add_action( 'widgets_init', 'main_sidebar' );
 //  end of sidebar
 
 
-/**
- * Remove autho parapaphs that is defult in WP
- * by @watheq
- */
 
+//  Remove autho parapaphs that is defult in WP
 // function remove_auto_p($content) {
 //     remove_filter('the_conent', 'wpautop', 0); // make priotary (the lower the most) 
-//     return $content;
-// }
-
+//     return $content; }
 // add_filter('the_content', 'remove_auto_p'); 
+
+
+// Remove visit store form the control panel
+// function remove_admin_bar_links() {
+//   global $wp_admin_bar;
+//   $wp_admin_bar->remove_menu('view-site');  // Remove the view site link
+//   $wp_admin_bar->remove_menu('view-store'); // Remove the view store link
+//   $wp_admin_bar->remove_menu('site-name');  // Remove the site name menu
+// }    
+// add_action( 'wp_before_admin_bar_render', 'remove_admin_bar_links' );
+
